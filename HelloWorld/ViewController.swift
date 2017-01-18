@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBAction func btnSend(_ sender: Any) {
         
         print("button pressed")
+        print("git test")
     }
     
     override func viewDidLoad() {
