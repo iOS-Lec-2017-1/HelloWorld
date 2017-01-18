@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         
         print("button pressed")
         print("git test")
+        lblHello.text = "Swift World"
     }
     
     override func viewDidLoad() {
