@@ -18,12 +18,14 @@ class ViewController: UIViewController {
         print("button pressed")
         print("git test")
         lblHello.text = "Hello Git World"
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("run viewDidiLoad()")
+        view.backgroundColor = UIColor.yellow
     }
 
     override func didReceiveMemoryWarning() {
