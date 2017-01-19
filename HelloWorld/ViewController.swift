@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var lblHello: UILabel!
     @IBOutlet weak var txtName: UITextField!
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         print("git test")
         //lblHello.text = "Hello Git World"
         lblHello.text = txtName.text
+        txtName.text = ""
         
     }
     
@@ -26,7 +27,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("run viewDidiLoad()")
-        view.backgroundColor = UIColor.yellow
+        //view.backgroundColor = UIColor.yellow
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtName.resignFirstResponder()
+        return true
     }
 
     override func didReceiveMemoryWarning() {
