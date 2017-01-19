@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         print("button pressed")
         print("git test")
-        lblHello.text = "Hello Git World"
+        //lblHello.text = "Hello Git World"
         
     }
     
