@@ -33,6 +33,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //view.backgroundColor = UIColor.yellow
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //view.backgroundColor = UIColor.blue
+        view.endEditing(true)
+        //txtName.resignFirstResponder()
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("textFieldShouldReturn")
         txtName.resignFirstResponder()
